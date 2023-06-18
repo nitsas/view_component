@@ -10,6 +10,10 @@ nav_order: 5
 
 ## main
 
+* Initialize ViewComponent::Config with defaults before framework load.
+
+    *Simon Fish*
+
 * Allow Setting host when using the `with_request_url` test helper.
 
      *Daniel Alfaro*

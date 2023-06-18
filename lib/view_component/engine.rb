@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 require "rails"
-require "view_component/base"
+require "view_component/config"
 
 module ViewComponent
   class Engine < Rails::Engine # :nodoc:
-    config.view_component = ViewComponent::Base.config
+    config.view_component = ViewComponent::Config.current
 
     rake_tasks do
       load "view_component/rails/tasks/view_component.rake"
